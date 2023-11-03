@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dim_2">
+
+    <RelativeLayout
+        android:id="@+id/relMainFlotAppLuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_15"
+        android:layout_marginRight="@dimen/dim_15"
+        android:layout_marginBottom="@dimen/appluck_bottom_margin"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layoutDefaultAd"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

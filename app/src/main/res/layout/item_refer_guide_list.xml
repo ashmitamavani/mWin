@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_btn_light_rect_new"
+            android:padding="@dimen/dim_15">
+
+            <TextView
+                android:id="@+id/tvStepNo"
+                android:layout_width="@dimen/dim_25"
+                android:layout_height="@dimen/dim_25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim_5"
+                android:background="@drawable/round_green"
+                android:fontFamily="@font/noto_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_13" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/relStory"
+                    android:layout_width="@dimen/dim_50"
+                    android:layout_height="@dimen/dim_50"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim_40"
+                    android:layout_marginRight="@dimen/dim_40"
+                    android:gravity="center">
+
+                    <ProgressBar
+                        android:id="@+id/probr"
+                        android:layout_width="@dimen/dim_25"
+                        android:layout_height="@dimen/dim_25"
+                        android:layout_centerInParent="true"
+                        android:theme="@style/Progressbar.Green" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/ivLottieView"
+                        android:layout_width="@dimen/dim_50"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <ImageView
+                        android:id="@+id/ivIcon"
+                        android:layout_width="@dimen/dim_50"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/noto_extra_bold"
+                            android:includeFontPadding="false"
+                            android:text="100"
+                            android:textColor="@color/black_font"
+                            android:textSize="@dimen/textSize_26" />
+
+                        <ImageView
+                            android:id="@+id/ivInfo"
+                            android:layout_width="@dimen/dim_30"
+                            android:layout_height="@dimen/dim_30"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dim_5"
+                            android:padding="@dimen/dim_5"
+                            android:src="@drawable/ic_info"
+                            app:tint="@color/grey_blue_black_font" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_3"
+                        android:fontFamily="@font/noto_regular"
+                        android:includeFontPadding="false"
+                        android:text="Sign up"
+                        android:textColor="@color/black_font"
+                        android:textSize="@dimen/textSize_14" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewBottomLink"
+            android:layout_width="@dimen/dim_3"
+            android:layout_height="@dimen/dim_20"
+            android:layout_marginLeft="@dimen/dim_30"
+            android:background="@color/green_transparent_border" />
+    </LinearLayout>
+</LinearLayout>

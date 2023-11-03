@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">mWin</string>
+    <string name="app_name_hash">mWin</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="more_app">More Apps</string>
+
+    <string name="i_accept" translatable="false">I Agree</string>
+    <string name="privacy_title" translatable="false">User Agreement &amp; Privacy Policy</string>
+    <string name="app_content_inst" translatable="false">Thank you for choosing mWin! We understand the importance of safeguarding your personal information and ensuring your privacy.\n\nTo ensure the protection of your personal rights and interests, we kindly request that you thoroughly review the Privacy Policy and Terms &amp; Conditions before proceeding to use our app.\n\nThe act of clicking on \'<b>I Agree</b>\' button means that you have read all the contents of the</string>
+    <string name="app_content_inst1" translatable="false">Your agreement signifies the acknowledgement and acceptance of our policies, which are designed to provide you with a secure and satisfactory user experience.</string>
+    <string name="app_terms" translatable="false"><u>Terms &amp; Conditions</u></string>
+    <string name="privacy_policy_underline"><u>Privacy policy</u></string>
+    <string name="i_agree_terms" translatable="false">I agree to the <b>Privacy Policy</b> and <b>Terms &amp; Conditions</b></string>
+
+    <string name="update">Update</string>
+    <string name="give_us_a_rating">Give us a rating</string>
+    <string name="rate_us_please_message">Rate us, please? It would take only a few seconds and it would mean a whole lot to us!</string>
+    <string name="enter_your_feedback">Enter your feedback</string>
+    <string name="oh_we_need_to_do_better">Oh! We need to do better. We will come back later.</string>
+    <string name="rate_us">Rate Us</string>
+    <!--AdMob Id-->
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="tap_to_exit">Tap again to exit</string>
+    <string name="visit_again">Visit again to earn more.</string>
+    <string name="thank_you_for_using">Thank You For Using mWin!</string>
+    <string name="titleTaskOffer">All Task (Easy &amp; Fast Earning)</string>
+    <string name="txtDisclaimer">Disclaimer</string>
+    <string name="txtTaskDetails">How to claim reward?</string>
+    <string name="underlined_claim_reward_text"><u>How to claim reward?</u></string>
+    <string-array name="animations_array">
+        <item>Alpha (Default)</item>
+        <item>Scale</item>
+        <item>Set (Scale + Alpha)</item>
+    </string-array>
+</resources>

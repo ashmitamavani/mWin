@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="ltr">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/toolbar_bg"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/dim_32"
+                android:layout_height="@dimen/dim_32"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:padding="@dimen/dim_5"
+                android:src="@drawable/ic_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivFAQ"
+                android:layout_toRightOf="@id/ivBack"
+                android:layout_weight="1"
+                android:fontFamily="@font/noto_extra_bold"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dim_20"
+                android:text="Give Feedback"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18"
+                tools:ignore="MissingPrefix" />
+
+            <ImageView
+                android:id="@+id/ivFAQ"
+                android:layout_width="@dimen/dim_32"
+                android:layout_height="@dimen/dim_32"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dim_20"
+                android:src="@drawable/ic_qa" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_200"
+                    android:layout_marginLeft="@dimen/dim_15"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginRight="@dimen/dim_15"
+                    android:layout_marginBottom="@dimen/dim_10"
+                    android:background="@drawable/inputbox_bg"
+                    android:elevation="@dimen/dim_2"
+                    android:fontFamily="@font/noto_medium"
+                    android:gravity="left|top"
+                    android:hint="Please enter your feedback *"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="@dimen/dim_1"
+                    android:lineSpacingMultiplier="1.3"
+                    android:padding="@dimen/dim_15"
+                    android:textColor="@color/black_font"
+                    android:textColorHint="@color/light_grey_font"
+                    android:textSize="@dimen/textSize_15"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:id="@+id/layoutImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_15"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:layout_marginRight="@dimen/dim_15"
+                    android:layout_marginBottom="@dimen/dim_10"
+                    android:background="@drawable/dashed_bg"
+                    android:elevation="@dimen/dim_2"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingPrefix">
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="@dimen/dim_100"
+                        android:layout_height="@dimen/dim_100"
+                        android:padding="@dimen/dim_10"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_default_image" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_45"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/noto_medium"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="@dimen/dim_1"
+                        android:lineSpacingMultiplier="1.3"
+                        android:maxLines="1"
+                        android:paddingRight="@dimen/dim_15"
+                        android:text="Upload Screenshot"
+                        android:textColor="@color/black_font"
+                        android:textSize="@dimen/textSize_15"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="@dimen/dim_150"
+                    android:layout_height="@dimen/dim_45"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginBottom="@dimen/dim_20"
+                    android:background="@drawable/selector_btn"
+                    android:fontFamily="@font/noto_medium"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/selector_button"
+                    android:textSize="@dimen/textSize_16" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

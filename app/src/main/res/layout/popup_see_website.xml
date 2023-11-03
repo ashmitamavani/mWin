@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dim_20"
+        android:background="@drawable/popup_background"
+        android:elevation="@dimen/dim_2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_20"
+            android:adjustViewBounds="true"
+            android:elevation="@dimen/dim_2"
+            android:src="@drawable/ic_gift_win" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dim_15"
+            android:background="@drawable/popup_top_white"
+            android:fontFamily="@font/noto_extra_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Congratulations!"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_footer_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_15"
+                android:fontFamily="@font/noto_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/rate_us_please_message"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:id="@+id/btnVisitWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginLeft="@dimen/dim_40"
+                    android:layout_marginRight="@dimen/dim_40"
+                    android:layout_marginBottom="@dimen/dim_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn"
+                    android:fontFamily="@font/noto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Visit Website"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_15" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

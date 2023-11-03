@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#f2f2f2</color>
+    <color name="colorPrimary">#4530b3</color>
+    <color name="colorPrimaryDark">#37268f</color>
+    <color name="colorAccent">#7c6ec9</color>
+    <color name="border_grey">#e5e5e5</color>
+
+    <color name="menu_selected">#0023C4</color>
+
+    <color name="red">#C61D24</color>
+    <color name="orange">#FF6D00</color>
+    <color name="blue">#4D89F8</color>
+    <color name="dark_blue">#00308F</color>
+    <color name="orange_yellow">#FCAE1E</color>
+    <color name="yellow">#FFCC66</color>
+    <color name="green">#0F9D58</color>
+
+    <color name="black_font">#333333</color>
+    <color name="grey_blue_black_font">#8D9499</color>
+    <color name="grey_font">#5A5A5A</color>
+    <color name="grey_color">#818181</color>
+    <color name="light_grey_font">#A0A0A0</color>
+
+    <color name="tools_bg_grey">#F4F4F4</color>
+
+    <color name="grey_button">#EBEBEB</color>
+    <color name="grey_button_pressed">#DEDEDE</color>
+
+    <color name="icon_tint">#9d9d9d</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black_transparent">#B3000000</color>
+    <color name="black_transparent_dark">#CC000000</color>
+    <color name="black_transparent_light">#90000000</color>
+    <color name="blue_transparent">#804530b3</color>
+    <color name="green_transparent">#1a4530b3</color>
+    <color name="green_transparent_border">#334530b3</color>
+</resources>

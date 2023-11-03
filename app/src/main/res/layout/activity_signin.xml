@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layoutDirection="ltr">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dim_20">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:fontFamily="@font/noto_extra_bold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.01"
+                    android:paddingLeft="@dimen/dim_30"
+                    android:paddingTop="@dimen/dim_10"
+                    android:paddingRight="@dimen/dim_30"
+                    android:text="Play &amp; Earn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_24"
+                    tools:ignore="MissingPrefix" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dim_20"
+                android:paddingRight="@dimen/dim_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imgBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/login_banner" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:fontFamily="@font/noto_extra_bold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.01"
+                    android:paddingLeft="@dimen/dim_10"
+                    android:paddingTop="@dimen/dim_10"
+                    android:paddingRight="@dimen/dim_10"
+                    android:text="Login/Signup"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_24"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:fontFamily="@font/noto_medium"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="@dimen/dim_1"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingLeft="@dimen/dim_10"
+                    android:paddingRight="@dimen/dim_10"
+                    android:text="Welcome! to start or resume your journey with mWin, join us with your google account."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14"
+                    tools:ignore="MissingPrefix" />
+
+                <EditText
+                    android:id="@+id/etReferralCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:background="@drawable/inputbox_bg"
+                    android:fontFamily="@font/noto_extra_bold"
+                    android:gravity="center"
+                    android:hint="Enter Referral Code (Optional)"
+                    android:includeFontPadding="false"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:lineSpacingExtra="@dimen/dim_1"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingLeft="@dimen/dim_15"
+                    android:paddingRight="@dimen/dim_15"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_font"
+                    android:textColorHint="@color/light_grey_font"
+                    android:textSize="@dimen/textSize_16"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:id="@+id/layoutLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_15"
+                    android:background="@drawable/selector_btn_no_disable"
+                    android:backgroundTint="@color/orange_yellow"
+                    android:elevation="@dimen/dim_3"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_20"
+                    android:paddingRight="@dimen/dim_20">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/round_white"
+                        android:padding="@dimen/dim_5"
+                        android:src="@drawable/ic_g_google" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/noto_extra_bold"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="@dimen/dim_10"
+                        android:text="Sign in with Google"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_16" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/noto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="@dimen/dim_15"
+                    android:paddingRight="@dimen/dim_15"
+                    android:text="or"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14" />
+
+                <LinearLayout
+                    android:id="@+id/layoutSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_20"
+                    android:background="@drawable/border_accent_rectangle"
+                    android:elevation="@dimen/dim_3"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_20"
+                    android:paddingRight="@dimen/dim_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/noto_extra_bold"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="@dimen/dim_10"
+                        android:text="Visit as Guest"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textSize_16" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

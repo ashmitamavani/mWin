@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dim_3">5dp</dimen>
+    <dimen name="dim_1">1.5dp</dimen>
+    <dimen name="dim_1_5">2.5dp</dimen>
+    <dimen name="dim_8">15dp</dimen>
+    <dimen name="dim_5">8dp</dimen>
+    <dimen name="dim_0_5">1dp</dimen>
+    <dimen name="dim_10">18dp</dimen>
+    <dimen name="dim_20">36dp</dimen>
+    <dimen name="dim_50">92dp</dimen>
+    <dimen name="dim_40">74dp</dimen>
+    <dimen name="dim_45">84dp</dimen>
+    <dimen name="dim_15">28dp</dimen>
+    <dimen name="dim_60">110dp</dimen>
+    <dimen name="dim_30">56dp</dimen>
+    <dimen name="dim_34">62dp</dimen>
+    <dimen name="dim_35">63dp</dimen>
+    <dimen name="dim_32">58dp</dimen>
+    <dimen name="dim_25">46dp</dimen>
+    <dimen name="dim_12">22dp</dimen>
+    <dimen name="dim_16">28dp</dimen>
+    <dimen name="dim_24">44dp</dimen>
+
+    <dimen name="dim_56">106dp</dimen>
+    <dimen name="header_height">86dp</dimen>
+    <dimen name="dim_65">120dp</dimen>
+    <dimen name="dim_120">230dp</dimen>
+    <dimen name="dim_80">150dp</dimen>
+    <dimen name="dim_2">3dp</dimen>
+    <dimen name="dim_6">8.5dp</dimen>
+    <dimen name="dim_170">320dp</dimen>
+
+    <dimen name="dim_150">280dp</dimen>
+    <dimen name="applovin_banner_height">90dp</dimen>
+    <dimen name="dim_300">540dp</dimen>
+    <dimen name="dim_100">182dp</dimen>
+    <dimen name="dim_200">372dp</dimen>
+    <dimen name="dim_54">100dp</dimen>
+    <dimen name="dim_240">460dp</dimen>
+    <dimen name="dim_90">164dp</dimen>
+    <dimen name="dim_70">130dp</dimen>
+    <dimen name="dim_180">338dp</dimen>
+    <dimen name="dim_250">450dp</dimen>
+
+    <dimen name="textSize_8">13sp</dimen>
+    <dimen name="textSize_10">16sp</dimen>
+    <dimen name="textSize_20">32sp</dimen>
+    <dimen name="textSize_12">20sp</dimen>
+    <dimen name="textSize_14">21sp</dimen>
+    <dimen name="textSize_13">20sp</dimen>
+    <dimen name="textSize_15">22sp</dimen>
+    <dimen name="textSize_16">25sp</dimen>
+    <dimen name="textSize_18">28sp</dimen>
+    <dimen name="textSize_22">36sp</dimen>
+    <dimen name="textSize_24">40sp</dimen>
+    <dimen name="textSize_26">44sp</dimen>
+    <dimen name="textSize_36">56sp</dimen>
+    <dimen name="appluck_bottom_margin">110dp</dimen>
+</resources>

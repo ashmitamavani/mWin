@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/toolbar_bg"
+        android:fontFamily="@font/noto_extra_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/privacy_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_18"
+        tools:ignore="MissingPrefix" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvInstructions2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_regular"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="@dimen/dim_1"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/app_content_inst"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/textSize_15"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_20"
+                android:layout_marginBottom="@dimen/dim_20"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/noto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/privacy_policy_underline"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textSize_15"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/noto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="  and  "
+                    android:textAlignment="center"
+                    android:textColor="@color/black_font"
+                    android:textSize="@dimen/textSize_15"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/noto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/app_terms"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textSize_15"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvInstructions3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_regular"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="@dimen/dim_1"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/app_content_inst1"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/textSize_15"
+                tools:ignore="MissingPrefix" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_20"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:buttonTint="@color/black_font"
+                android:fontFamily="@font/noto_regular"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dim_2"
+                android:text="@string/i_agree_terms"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/textSize_14"
+                tools:ignore="MissingPrefix" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIAgree"
+                android:layout_width="@dimen/dim_150"
+                android:layout_height="@dimen/dim_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_10"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:background="@drawable/selector_btn"
+                android:enabled="false"
+                android:fontFamily="@font/noto_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dim_30"
+                android:paddingRight="@dimen/dim_30"
+                android:text="@string/i_accept"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_button"
+                android:textSize="@dimen/textSize_15" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQuit"
+                android:layout_width="@dimen/dim_150"
+                android:layout_height="@dimen/dim_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_5"
+                android:layout_marginBottom="@dimen/dim_20"
+                android:background="@null"
+                android:fontFamily="@font/noto_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dim_30"
+                android:paddingRight="@dimen/dim_30"
+                android:text="Not Agree"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSize_16" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="svp_runAuto" format="boolean" />
+        <attr name="svp_colorActiveIndicator" format="color" />
+        <attr name="svp_colorInactiveIndicator" format="color" />
+        <attr name="svp_timeMillis" format="integer" />
+
+    </declare-styleable>
+    <declare-styleable name="StoriesProgressView">
+        <attr name="progressCount" format="integer|reference" />
+    </declare-styleable>
+    <declare-styleable name="Tile">
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr name="android:layout_weight" />
+        <attr name="android:layout_margin" />
+        <attr name="android:background" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+    </declare-styleable>
+</resources>

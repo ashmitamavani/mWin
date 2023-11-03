@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "31644440914",
+    "project_id": "mwin-2b5f2",
+    "storage_bucket": "mwin-2b5f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31644440914:android:2a762e976e6190e813c28b",
+        "android_client_info": {
+          "package_name": "com.mwin.reward"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31644440914-sr0cjh5jlh3thhshchovqlpoimbqb570.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mwin.reward",
+            "certificate_hash": "0750e4280c23fe56bb87fb0a2b2b765c465ea58a"
+          }
+        },
+        {
+          "client_id": "31644440914-tk06lvnd6n4uobb62c0chdiihikok6e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6vjtugZUTn0_xCad8pcBIVl7miU9eyN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31644440914-tk06lvnd6n4uobb62c0chdiihikok6e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

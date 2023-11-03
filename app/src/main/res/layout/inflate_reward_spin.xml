@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFullImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_15"
+        android:layout_marginTop="@dimen/dim_5"
+        android:layout_marginEnd="@dimen/dim_15"
+        android:layout_marginBottom="@dimen/dim_10"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dim_80">
+
+            <ProgressBar
+                android:id="@+id/progressBarFullImage"
+                android:layout_width="@dimen/dim_35"
+                android:layout_height="@dimen/dim_35"
+                android:layout_centerInParent="true"
+                android:theme="@style/Progressbar.Green" />
+
+            <ImageView
+                android:id="@+id/ivIconFullImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:visibility="visible" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ivLottieFullImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_15"
+        android:layout_marginTop="@dimen/dim_5"
+        android:layout_marginEnd="@dimen/dim_15"
+        android:layout_marginBottom="@dimen/dim_10"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="@dimen/dim_10"
+        app:cardElevation="@dimen/dim_2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_1_5"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/dim_10"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/layoutContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutContentClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutIcon"
+                        android:layout_width="@dimen/dim_56"
+                        android:layout_height="@dimen/dim_56"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dim_10"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:layout_marginBottom="@dimen/dim_10"
+                        android:background="@drawable/rectangle_white"
+                        android:padding="@dimen/dim_6">
+
+                        <ProgressBar
+                            android:id="@+id/probr"
+                            android:layout_width="@dimen/dim_25"
+                            android:layout_height="@dimen/dim_25"
+                            android:layout_centerInParent="true"
+                            android:theme="@style/Progressbar.Green" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/ivLottie"
+                            android:layout_width="@dimen/dim_56"
+                            android:layout_height="@dimen/dim_56"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="visible"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true" />
+
+                        <ImageView
+                            android:id="@+id/ivIcon"
+                            android:layout_width="@dimen/dim_56"
+                            android:layout_height="@dimen/dim_56"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:layout_marginRight="@dimen/dim_5"
+                            android:fontFamily="@font/noto_extra_bold"
+                            android:gravity="left"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.01"
+                            android:paddingLeft="@dimen/dim_10"
+                            android:text="15 Days login challenge"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_16" />
+
+                        <TextView
+                            android:id="@+id/lblSubTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dim_5"
+                            android:layout_marginRight="@dimen/dim_5"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:fontFamily="@font/noto_regular"
+                            android:gravity="left"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.01"
+                            android:paddingLeft="@dimen/dim_10"
+                            android:text="(Use mWin everyday &amp; claim FREE points)"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_font"
+                            android:textSize="@dimen/textSize_13" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivLock"
+                        android:layout_width="@dimen/dim_20"
+                        android:layout_height="@dimen/dim_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dim_10"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone"
+                        app:tint="@color/grey_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutViewDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dim_2"
+                        android:paddingBottom="@dimen/dim_2">
+
+                        <TextView
+                            android:id="@+id/tvNote"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dim_5"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/noto_medium"
+                            android:gravity="left"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.01"
+                            android:paddingLeft="@dimen/dim_10"
+                            android:text="Earn upto 1000 points"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <ImageView
+                            android:id="@+id/ivNext"
+                            android:layout_width="@dimen/dim_25"
+                            android:layout_height="@dimen/dim_25"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/dim_10"
+                            android:src="@drawable/ic_right"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/dim_10"
+        android:background="@drawable/label_new_backgound"
+        android:elevation="@dimen/dim_2"
+        android:ellipsize="end"
+        android:fontFamily="@font/noto_extra_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dim_8"
+        android:paddingTop="@dimen/dim_2"
+        android:paddingRight="@dimen/dim_8"
+        android:paddingBottom="@dimen/dim_2"
+        android:text="Live"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_12"
+        android:visibility="gone" />
+</FrameLayout>

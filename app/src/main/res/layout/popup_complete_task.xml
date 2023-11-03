@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dim_20"
+        android:background="@drawable/popup_background"
+        android:elevation="@dimen/dim_2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim_10">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_5"
+                android:layout_weight="1"
+                android:fontFamily="@font/noto_extra_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minHeight="@dimen/dim_40"
+                android:text="Complete Easy Tasks"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_0_5"
+            android:background="@color/border_grey" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dim_10"
+            android:fontFamily="@font/noto_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Complete Easy Tasks To Go Ahead"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/textSize_14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_5"
+            android:layout_marginRight="@dimen/dim_5" />
+
+        <View
+            android:id="@+id/viewSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_0_5"
+            android:layout_below="@id/rvTasks"
+            android:layout_marginTop="@dimen/dim_10"
+            android:background="@color/border_grey" />
+
+        <android.widget.Button
+            android:id="@+id/btnViewAll"
+            android:layout_width="@dimen/dim_150"
+            android:layout_height="@dimen/dim_40"
+            android:layout_below="@id/viewSeparator"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_15"
+            android:layout_marginEnd="@dimen/dim_15"
+            android:layout_marginBottom="@dimen/dim_15"
+            android:background="@drawable/selector_btn"
+            android:fontFamily="@font/noto_extra_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="View All Tasks"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15" />
+    </LinearLayout>
+</LinearLayout>
